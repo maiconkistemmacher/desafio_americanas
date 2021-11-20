@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,75 +10,101 @@
 </head>
 
 <body>
+    <!------- Logo ------->
     <div class="logo">
-        <img src="logo.svg" style="margin-left: 80px;" alt="Logo da Americanas">
+        <a href="https://www.americanas.com.br/"> <img src="logo.svg"
+                style="margin-top:26px;margin-left:150px;height:32px;" alt="Logo da Americanas"></a>
     </div>
 
-    <div class="topo">
+    <!------- Topo ------->
+    <div class="titulo">
         <h1>criar seu cadastro</h1>
         <h2>veja seus pedidos de forma fácil, compre mais rápido e tenha uma<br> experiência personalizada :)</h2>
         <h3><label class="asteristico">* </label>campos obrigatórios</h3>
     </div>
 
-    <section id="formulario">
-        <form>            
-            <!-- Nome -->
+    <!------- Formulário ------->
+    <section>
+        <form>
+            <!------- Nome ------->
             <div>
-                <label><label class="asteristico">* </label>nome completo</label><br>        
+                <label><label class="asteristico">* </label>nome completo</label><br>
                 <input type="text" name="nome" id="nome" /><br><br>
             </div>
-
-            <!-- Gênero -->
+            <!------- Gênero ------->
             <div>
                 <label><label class="asteristico">* </label>gênero</label><br>
                 <label id="observacao">pra gente te conhecer um pouquinho melhor :)</label><br>
-                <input type="radio" name="genero" id="feminino">feminino
-                <input type="radio" name="genero" id="masculino">masculino
-                <input type="radio" name="genero" id="nao_informar">não informar
-                <br><br>
+                <div id="genero">
+                    <input type="radio" name="genero" id="feminino">feminino
+                    <input type="radio" name="genero" id="masculino">masculino
+                    <input type="radio" name="genero" id="nao_informar">não informar<br><br>
+                </div>
             </div>
-
-            <!-- Data de Nascimento -->
-            <label><label class="asteristico">* </label>data de nascimento</label><br>
-            <label id="observacao">necessário pra identificar a maioridade, no formato DD/MM/AAAA</label><br>
-            <input type="text" name="data" class="" id="data" /><br><br>
-            
-            <!-- CPF -->
-            <label><label class="asteristico">*</label>CPF</label><br>
-            <label id="observacao">necessário pra emissão das Notas Fiscais</label><br>
-            <input type="tel" name="cpf" class="" id="cpf" /><br>
-            <label><a href="" id="pessoa_juridica">é pessoa jurídica? conheça a americanas empresas</a></label><br><br>
-
-            <!-- Telefone -->
-            <label><label class="asteristico">*</label>telefone</label><br>
-            <label id="observacao">caso a gente precise entrar em contato sobre seus pedidos</label><br>
-            <input type="tel" name="telefone" class="" id="telefone" /><br>
-            <input type="checkbox" name="telefone">
-            <label>receber notificações por whatsapp</label><br><br>
-
-            <!-- Email -->
-            <label><label class="asteristico">*</label>email</label><br>
-            <input type="text" name="email" class="" id="" /><br>
-            <input type="checkbox" name="email">
-            <label>receber e-mails promocionais</label><br><br><br>
-
-            <!-- Senha -->
-            <label><label class="asteristico">*</label>senha</label><br>
-            <label>precisa ter entre 6 e 20 caracteres</label><br>
-            <input type="password" name="data" class="" id="" /><br><br>
-
-            <input type="checkbox" name="parceiros">
-            <label>compartilhar meus dados com parceiros para ter<br> conteúdos personalizados, <a href="">veja como funciona.</a></label><br><br>
-
-            <input type="button" value="criar seu cadastro"><br><br>
-
-            <label>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,<br> você concorda com a nossa <a href="politica_de_privacidade.html">Política de Privacidade</a></label><br><br>
-
-            <label>já tem cadastro? <a href="login.html">entrar</a></label>
+            <!------- Data de Nascimento ------->
+            <div>
+                <label><label class="asteristico">* </label>data de nascimento</label><br>
+                <label id="observacao">necessário pra identificar a maioridade, no formato DD/MM/AAAA</label><br>
+                <input type="text" name="data" class="" id="data" placeholder="   __/__/____" /><br><br>
+            </div>
+            <!------- CPF ------->
+            <div>
+                <label><label class="asteristico">*</label>CPF</label><br>
+                <label id="observacao">necessário pra emissão das Notas Fiscais</label><br>
+                <input type="tel" name="cpf" class="" id="cpf" placeholder="    ___.___.___-__" /><br>
+                <label><a href="" id="pessoa_juridica">é pessoa jurídica? conheça a americanas
+                        empresas</a></label><br><br>
+            </div>
+            <!------- Telefone ------->
+            <div>
+                <label><label class="asteristico">*</label>telefone</label><br>
+                <label id="observacao">caso a gente precise entrar em contato sobre seus pedidos</label><br>
+                <input type="tel" name="telefone" class="" id="telefone" placeholder="   (__) _____-____" /><br>
+                <div>
+                    <input type="checkbox" name="telefone" id="telefone_check-box">
+                    <label>receber notificações por whatsapp</label><br><br>
+                </div>
+            </div>
+            <!------- Email ------->
+            <div>
+                <label><label class="asteristico">*</label>email</label><br>
+                <input type="text" name="email" class="" id="email" /><br>
+                <div>
+                    <input type="checkbox" name="email">
+                    <label>receber e-mails promocionais</label><br><br><br>
+                </div>
+            </div>
+            <!------- Senha ------->
+            <div>
+                <label><label class="asteristico">*</label>senha</label><br>
+                <label>precisa ter entre 6 e 20 caracteres</label><br>
+                <input type="password" name="password" class="" id="password" /><br><br>
+            </div>
+            <div>
+                <div>
+                    <input type="checkbox" name="parceiros">
+                    <label>compartilhar meus dados com parceiros para ter<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;conteúdos personalizados, veja <a href="" class="parceiros">
+                            como
+                            funciona.</a></label><br><br>
+                </div>
+            </div>
+            <!------- Botão criar Cadastro ------->
+            <div id="button">
+                <!-- <button type="submit" class="button">criar seu cadastro</button><br><br> -->
+                <input type="button" value="criar seu cadastro" class="button"><br><br>
+            </div>
+            <!------- Política de Privacidade ------->
+            <div>
+                <label>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;você
+                    concorda com a nossa <a href="politica_de_privacidade.html" class="politica_privacidade">Política de
+                        Privacidade</a></label><br><br>
+            </div>
+            <!------- Login ------->
+            <div id="ja_cadastrado">
+                <label>já tem cadastro? <a href="login.html" class="ja_cadastrado">entrar</a></label>
+            </div>
         </form>
     </section>
-    
-
 </body>
 
 </html>
