@@ -1,37 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
+
 <body>
-    
-    <h1>login do cliente</h1>
-    <br><br>
+    <!------- Logo ------->
+    <div class="logo">
+        <a href="https://www.americanas.com.br/"> <img src="img/logo.svg"
+                style="margin-top:26px;margin-left:150px;height:32px;" alt="Logo da Americanas"></a>
+    </div>
+    <div id="button-voltar">
+        <a href="cadastro.html"><input type="button" value="Voltar" class="button-voltar"></a><br><br>
+    </div>
 
-    <label>e-mail:</label>
-    <br>
-    <input type="text" name="email" id="" />
-    <br><br>
 
-    <label>senha na americanas.com:</label>
-    <br>
-    <input type="password" name="email" id="" />
-    <br><br>
+    <section>
+        <form>
+            <div class="titulo">
+                <img src="img/login.png" style="height: 35px;margin-top: 8px;">
+                <h1>login do cliente</h1>
+            </div>
 
-    <input type="button" value="continuar" name="login" id="" />
-    <br><br>
+            <div>
+                <label style="padding-right:310px;margin-bottom: 5px;">e-mail:</label><br>
+            </div>
 
-    <label>não tem cadastro? <a href="">cadastre-se</a></label>
-    <br>
-    
-    <label>Ao continuar com o acesso, você concorda com a nossa <a href="">política de privacidade</a></label>
-    <br><br><br>
+            <div>
+                <input type="text" name="email" id="" placeholder="Ex. rafaelfranco@alphacode.com.br" /><br><br>
+            </div>
 
-    <label><a href="cadastro.html">Voltar</a></label>
+            <div>
+                <label style="padding-right: 120px;margin-top: 25px;margin-bottom: 5px;">senha na americanas.com:</label><a href="#" style="color: #666666;margin-top: 25px;margin-bottom: 5px;">esqueceu?</a><br>
+            </div>
 
+            <div>
+                <input type="password" name="email" id="" /><br><br>
+            </div>
+
+            <div>
+                <input type="button" value="continuar" class="button" /><br><br>
+            </div>
+
+            <div>
+                <label style="margin-bottom: 25px;">não tem cadastro? <a href="#" style="color: #666666;">cadastre-se</a></label><br>
+            </div>
+
+            <div>
+                <label style="text-align: center;font-size: 14px;">Ao continuar com o acesso, você concorda com a nossa<br><a href="" style="color: #666666;">política de
+                        privacidade</a></label><br><br><br>
+            </div>
+        </form>
+    </section>
 
 </body>
+
 </html>
