@@ -80,6 +80,10 @@ input {
     cursor: pointer; 
 }
 
+.button-voltar:hover{
+    opacity: 80%;
+}
+
 #button-voltar {
     display: flex;
     justify-content: end;
