@@ -37,6 +37,11 @@ input {
     opacity: 70%;
 }
 
+.imagem {
+    margin-top:26px;
+    margin-left:150px;
+    height:32px;
+}
 .titulo {
     display: flex;
     justify-content: center;
@@ -86,6 +91,27 @@ input {
 
 #button-voltar {
     display: flex;
-    justify-content: end;
-    margin-right: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+/* APLICANDO RESPONSIVIDIDADE */
+@media screen and (min-width: 1200px) and (max-width: 1480px) {}
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+@media screen and (min-width: 765px) and (max-width: 992px) {   
+    .imagem {
+        margin-left:50px;
+    }
+}
+@media screen and (max-width: 765px) {    
+    .imagem {
+        margin-left:50px;
+        width: 150px;
+    }
+    .button-voltar {
+        width: 100px;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
