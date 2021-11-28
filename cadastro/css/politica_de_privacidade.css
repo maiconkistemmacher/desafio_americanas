@@ -54,6 +54,52 @@ ul {
 
 #button {
     display: flex;
-    justify-content: end;
-    margin-right: 20px;
+    flex-direction: row-reverse;
+    margin-right: 10px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem {
+    margin-top:26px;
+    margin-left:150px;
+    height:32px;
+}
+
+/* APLICANDO RESPONSIVIDIDADE */
+@media screen and (min-width: 1200px) and (max-width: 1480px) {
+    section {
+        padding: 10px 150px 50px 150px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    section {
+        padding: 10px 130px 50px 130px;
+    }
+}
+@media screen and (min-width: 765px) and (max-width: 992px) {
+    section {
+        padding: 10px 90px 50px 90px;
+    }
+    .imagem {
+        margin-left:50px;
+    }
+}
+@media screen and (max-width: 765px) {
+    section {
+        padding: 10px 50px 50px 50px;
+    }
+    .imagem {
+        margin-left:50px;
+        width: 150px;
+    }
+    .button {
+        width: 100px;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }

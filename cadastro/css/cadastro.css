@@ -1,3 +1,9 @@
+
+    /* @media screen and (max-width: 765px) {}
+    @media screen and (min-width: 765px) and (max-width: 992px) {}
+    @media screen and (min-width: 992px) and (max-width: 1200px) {} */
+
+
 body {
     margin: 0;
 }
@@ -5,6 +11,14 @@ body {
 .logo {
     height: 85px;
     background-color: rgb(248, 0, 50);
+}
+
+.imagem {
+    margin-top: 26px;
+    margin-left: 150px;
+    height: 32px;
+
+    
 }
 
 /* INICIO TOPO */
@@ -36,8 +50,14 @@ h3 {
     font-size: 12px;
     font-weight: 300;
 }
+
 /* FIM TOPO */
 
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* INICIO INPUTS */
 section>form>div {
@@ -94,6 +114,7 @@ section>form>div>input {
     width: 250px;
     margin-bottom: 12px;
 }
+
 /* FIM INPUTS */
 
 
@@ -141,6 +162,7 @@ label {
     text-align: center;
     margin-bottom: 15px;
 }
+
 /* FIM LABELS */
 
 
@@ -161,7 +183,7 @@ label {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     opacity: 80%;
 }
 
@@ -169,4 +191,65 @@ label {
     display: flex;
     justify-content: center;
 }
+
 /* FIM BOTÃO */
+
+
+
+/* APLICANDO RESPONSIVIDIDADE */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .imagem {
+        margin-left: 120px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 765px) and (max-width: 992px) {
+    .imagem {
+        margin-left: 100px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .imagem {
+        margin-left: 40px;
+        width: 150px;
+    }
+
+    .titulo {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 15px;
+        display: block;
+    }
+
+    #nome {
+        width: 290px;
+    }
+
+    #email {
+        width: 290px;
+    }
+}
