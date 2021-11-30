@@ -1,2 +1,6 @@
-# desafio_americanas
-Curso Feras da Tecnologia
+# Curso Feras da Tecnologia - Desafio Americanas
+
+
+<div align="center">
+
+![](readme.png)
